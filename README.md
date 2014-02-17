@@ -16,6 +16,25 @@ replace: anchor/routes/posts.php
 4. Now you can upload an image with drag&drop it into the post editor.
 5. Have fun with blogging =)
 
+###Problems
+If you upload an image and the link is like
+
+```![image1.jpg](//content/image1.jpg)```
+
+
+edit the **anchor/routes/posts.php** on line **263**
+
+from:
+<pre>
+$uri = Config::app('url', '/') . '/content/' . basename($filepath);
+</pre>
+
+to:
+
+<pre>
+$uri = Config::app('url', '/') . 'content/' . basename($filepath);       
+</pre>
+
 
 
 
