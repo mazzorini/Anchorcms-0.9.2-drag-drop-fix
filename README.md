@@ -1,7 +1,7 @@
 #Anchorcms image upload fix
 
 Anchorcms: 0.9.1 + 0.9.2   
-
+#####With that patch you can upload images to "pages" and "posts" via drag&drop.
 
 ##Installation
 ####Care if you have modified files:
